@@ -6,7 +6,7 @@ const Navbar = () => {
             <h2 className="primary-color">Notes App</h2>
             <div>
                 <Link to="/">Home</Link>
-                <Link to="#" className="ml-3">New Note</Link>
+                <Link to="/add" className="ml-3">New Note</Link>
             </div>
 
         </nav>

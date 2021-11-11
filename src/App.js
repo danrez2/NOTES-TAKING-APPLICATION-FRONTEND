@@ -3,6 +3,7 @@ import  NotFound  from './components/NotFound';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import NotesList from './components/NotesList';
 import Navbar from "./components/Navbar";
+import AddNote from "./components/AddNote";
 
 
 
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
        <Switch>
          <Route exact path="/" component={NotesList} />
+         <Route path="/add" component={AddNote} />
          <Route path="*" component={NotFound} />
          
        </Switch>
