@@ -8,10 +8,10 @@ const NotesList = () => {
 
     useEffect(() => {
         NotesService.getAll()
-        .then(Response => {
+        .then(response => {
 
-            console.log('printing response', Response.data);
-            setNotes(Response.data);
+            console.log('printing response', response.data);
+            setNotes(response.data);
 
           
             
