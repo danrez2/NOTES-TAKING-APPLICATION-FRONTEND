@@ -11,10 +11,7 @@ const NotesList = () => {
         .then(response => {
 
             console.log('printing response', response.data);
-            setNotes(response.data);
-
-          
-            
+            setNotes(response.data);   
         })
         .catch(error => {
             console.log('something went wrong', error);
