@@ -14,4 +14,8 @@ const get = id => {
 
 }
 
-export default { getAll, create, get };
+const remove = id => {
+    return httpClient.delete(`/notes/${id}`);
+}
+
+export default { getAll, create, get, remove };
