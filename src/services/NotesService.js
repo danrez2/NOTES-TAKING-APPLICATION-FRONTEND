@@ -18,4 +18,9 @@ const remove = id => {
     return httpClient.delete(`/notes/${id}`);
 }
 
-export default { getAll, create, get, remove };
+const update = data => {
+    return httpClient.put('/notes', data);
+
+}
+
+export default { getAll, create, get, remove, update };
